@@ -20,7 +20,7 @@ public class login : MonoBehaviour
 
     public void loginButton()
     {
-        StartCoroutine(PostRequest("http://10.1.46.41:8002/auth"));
+        StartCoroutine(PostRequest("http://gullyar.ankuranant.dev/auth"));
         Debug.Log(username.text);
         Debug.Log(password.text);
     }
