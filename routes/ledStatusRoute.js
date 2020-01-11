@@ -24,7 +24,13 @@ route.post('/', async (req, res) => {
 		isActive: req.body.isActive,
 		location: req.body.location
 	}
-	const newPowerData = await LedStatusService.createLed(req.body.isActive, req.body.location);
+	const isActive;
+	if(req.body.isActive === 0) {
+		isActive = false;
+	} else {
+		isActive = true;
+	}
+	const newPowerData = await LedStatusService.createLed(isActive, req.body.location);
 	console.log("Led --------> ", req.body);
 	res.send('yolo');
 })
