@@ -16,7 +16,7 @@ class LedStatusService {
 
 	async createLed(isActive, location) {
 		console.log(location)
-		const editedLostFound = await LostFound.findOneAndUpdate(
+		const editedLostFound = await Led.findOneAndUpdate(
 			{ isActive },
 			{ location },
 			{ new: true }
