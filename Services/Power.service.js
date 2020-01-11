@@ -16,7 +16,7 @@ class PowerService {
 
 	async createPower(power) {
 		try {
-			const powerData = new Power({power});
+			const powerData = await new Power({power});
 			powerData.save();
 			return powerData;
 		} catch(error) {
