@@ -59,6 +59,10 @@ app.post('/discord', (req, res) => {
 
 app.get('/ledstatus', (req, res) => {
 	res.json({isActive: true});
+});
+app.post('/ledstatus', (req, res) => {
+	console.log(req.body)
+	res.send('success');
 })
 
 app.listen(port, () => {
