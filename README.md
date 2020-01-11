@@ -14,12 +14,12 @@ Saving power is not only to avoid big bills. It is to make a sustainable environ
 
 ![Image of adafruit](Screenshots/Adafruit_dashboard_snip.PNG)
 
-![Image of 1](Screenshots/WhatsApp Image 2020-01-11 at 20.58.16.jpeg)
+![Image of 1](Screenshots/1.png)
 
-![Image of 2](Screenshots/WhatsApp Image 2020-01-11 at 20.58.17.jpeg)
+![Image of 2](Screenshots/2.png)
 
-![Image of 3](Screenshots/WhatsApp Image 2020-01-11 at 20.58.19 (1).jpeg)
+![Image of 3](Screenshots/3.png)
 
-![Image of 4](Screenshots/WhatsApp Image 2020-01-11 at 20.58.19.jpeg)
+![Image of 4](Screenshots/4.png)
 
-![Image of 5](Screenshots/WhatsApp Image 2020-01-11 at 20.58.20.jpeg)
+![Image of 5](Screenshots/5.png)
