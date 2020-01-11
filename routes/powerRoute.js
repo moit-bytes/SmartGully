@@ -22,7 +22,8 @@ route.get('/', async (req, res) => {
 
 route.post('/', async (req, res) => {
 	const newPowerData = await PowerService.createPower(req.body.power);
-	console.log("Power --------> ", req.body.power);
+	console.log("Power --------> ", req.body);
+	res.send('yolo');
 })
 
 module.exports = route;
