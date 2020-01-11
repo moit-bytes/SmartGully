@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class animationsOnOff : MonoBehaviour
 {
-    public int mode = 0;                         //  0 -- on,  1 -- off
+    public static int ledMode = 1;                         //  0 -- off,  1 -- on
     public Animator anim;
     public GameObject butR;
     public GameObject butL;
@@ -12,7 +12,7 @@ public class animationsOnOff : MonoBehaviour
     void Start()
     {
 
-        if(mode == 0)
+        if(ledMode == 1)
         {
             butR.SetActive(true);
             butL.SetActive(false);
@@ -34,6 +34,7 @@ public class animationsOnOff : MonoBehaviour
         anim.SetBool("onOffslideR", false);
         butR.SetActive(true);
         butL.SetActive(false);
+        ledMode = 1;
 
 
     }
@@ -43,6 +44,7 @@ public class animationsOnOff : MonoBehaviour
         anim.SetBool("onOffslideR", true);
         butR.SetActive(false);
         butL.SetActive(true);
+        ledMode = 0;
 
 
     }
