@@ -59,4 +59,16 @@ route.post('/verifyoldtoken', verifyToken, (req, res) => {
 	})
 });
 
+route.get('/verify', verifyToken, (req, res) => {
+	console.log(req.token)
+	jwt.verify(req.token, process.env.JWT_SECRET, (err, response) => {
+		if(err) console.log(err);
+		if(response) {
+			res.json({isLoggedIn: true});
+		} else {
+			res.json({isLoggedIn: false});
+		}
+	})
+});
+
 module.exports = route;
