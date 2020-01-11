@@ -8,7 +8,7 @@ SmartGully also sends a notification summarising the power consumption on a dail
 
 Saving power is not only to avoid big bills. It is to make a sustainable environment for the future generation and smARTGully will help us take a huge step towards achieving the same.
 
-###[Backend Repo](https://git.zerobot.xyz/anantankur/gullyarApi)
+### [Backend Repo](https://git.zerobot.xyz/anantankur/gullyarApi)
 
 ![Image of device](Screenshots/Device_snip_2.png)
 
