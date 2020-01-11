@@ -24,7 +24,7 @@ route.post('/', async (req, res) => {
 		isActive: req.body.isActive,
 		location: req.body.location
 	}
-	const isActive;
+	let isActive = false;
 	if(req.body.isActive === 0) {
 		isActive = false;
 	} else {
