@@ -25,10 +25,12 @@ mongoose
   .then(() => console.log("Connected to the database"));
 
 const authRoute = require("./routes/authRoute");
+const powerRoute = require("./routes/powerRoute");
 
 const value = [];
 
 app.use("/auth", authRoute);
+app.use("/power", powerRoute);
 
 app.get('/', (req, res) => {
 	res.send('yolo');
