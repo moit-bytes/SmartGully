@@ -26,11 +26,13 @@ mongoose
 
 const authRoute = require("./routes/authRoute");
 const powerRoute = require("./routes/powerRoute");
+const ledStatusRoute = require("./routes/ledStatusRoute");
 
 const value = [];
 
 app.use("/auth", authRoute);
 app.use("/power", powerRoute);
+app.use("/ledstatus", ledStatusRoute);
 
 app.get('/', (req, res) => {
 	res.send('yolo');

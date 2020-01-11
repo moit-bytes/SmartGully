@@ -15,15 +15,13 @@ class LedStatusService {
 	}
 
 	async createLed(isActive, location) {
-		try {
-			const ledData = await new Led({location}, {isActive}, {
-				upsert: true
-			});
-			ledData.save();
-			return ledData;
-		} catch(error) {
-			this.logger.error(`createLed: ${ error }`);
-		}
+		console.log(location)
+		const editedLostFound = await LostFound.findOneAndUpdate(
+			{ isActive },
+			{ location },
+			{ new: true }
+		).exec();
+		return editedLostFound;
 	}
 
 }
