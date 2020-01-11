@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class animations : MonoBehaviour
 {
-    public int mode = 0;                         //  0 -- Auto,  1 -- Manual
+    public static int mainMode = 1;                         //  1 -- Auto,  0 -- Manual
     public Animator anim;
     public GameObject butR;
     public GameObject butL;
@@ -12,17 +12,17 @@ public class animations : MonoBehaviour
 
     void Start()
     {
-        if(mode == 0)
+        if(mainMode == 1)
         {
-            butR.SetActive(false);
-            butL.SetActive(true);
+            butR.SetActive(true);
+            butL.SetActive(false);
             slideR();
 
         }
         else
         {
-            butR.SetActive(true);
-            butL.SetActive(false);
+            butR.SetActive(false);
+            butL.SetActive(true);
             slideL();
         }
 
@@ -35,6 +35,7 @@ public class animations : MonoBehaviour
         butR.SetActive(true);
         butL.SetActive(false);
         onOff.SetActive(false);
+        mainMode = 1;
 
 
     }
@@ -45,6 +46,8 @@ public class animations : MonoBehaviour
         butR.SetActive(false);
         butL.SetActive(true);
         onOff.SetActive(true);
+        mainMode = 0;
+
 
 
     }
