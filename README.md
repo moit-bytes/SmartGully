@@ -8,6 +8,6 @@ smARTGully also sends a notification summarising the power consumption on a dail
 
 Saving power is not only to avoid big bills. It is to make a sustainable environment for the future generation and smARTGully will help us take a huge step towards achieving the same. 
 
-![Image of device](Device_snip_2.png)
+![Image of device](Screenshots/Device_snip_2.png)
 
-![Image of adafruit](Adafruit_dashboard_snip.PNG)
+![Image of adafruit](Screenshots/Adafruit_dashboard_snip.PNG)
