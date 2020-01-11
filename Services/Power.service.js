@@ -16,10 +16,11 @@ class PowerService {
 
 	async createPower(power) {
 		try {
-			const powerData = await new Power(power);
+			const powerData = new Power(power);
+			powerData.save();
 			return powerData;
 		} catch(error) {
-			this.logger.error(`getPower: ${ error }`);
+			this.logger.error(`createPower: ${ error }`);
 		}
 	}
 
